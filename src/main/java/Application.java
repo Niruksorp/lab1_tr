@@ -20,7 +20,6 @@ public class Application {
                 System.out.println("Корректно");
             } else {
                 System.out.println("Не корректно");
-                ;
             }
         } else System.out.println("Неправильный ввод");
     }
