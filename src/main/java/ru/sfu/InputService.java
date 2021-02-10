@@ -1,3 +1,5 @@
+package ru.sfu;
+
 import java.io.IOException;
 
 public class InputService {

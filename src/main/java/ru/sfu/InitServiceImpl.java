@@ -1,3 +1,5 @@
+package ru.sfu;
+
 import java.util.List;
 
 public class InitServiceImpl implements InitService {

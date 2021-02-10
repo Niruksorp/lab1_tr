@@ -1,12 +1,15 @@
+package ru.sfu;
+
 public class Application {
 
     public static void main(String[] args) {
         final DFAFacade dfaFacade = new DFAFacadeImpl();
+        final InputService inputService = new InputService();
         DFAData dfaData = dfaFacade.generateDFAData();
-        InputService inputService = new InputService();
         String s = inputService.getUserString();
         char[] chars = s.toCharArray();
-        if (inputService.validateUserInput(s,dfaData.getAlphabet())) {
+
+        if (inputService.validateUserInput(s, dfaData.getAlphabet())) {
             DFAStates[][] dfaTable = dfaData.getTransitionTable();
             for (int i = 0; i < s.length(); i++) {
                 DFAStates rez = dfaTable[dfaData.getStartStateInit().getState()][chars[i] - '0'];

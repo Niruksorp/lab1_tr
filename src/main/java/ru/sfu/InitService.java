@@ -1,3 +1,5 @@
+package ru.sfu;
+
 import java.util.List;
 
 public interface InitService {

@@ -1,3 +1,5 @@
+package ru.sfu;
+
 public class DFAFacadeImpl implements DFAFacade {
 
     private final InitService initService = new InitServiceImpl();
