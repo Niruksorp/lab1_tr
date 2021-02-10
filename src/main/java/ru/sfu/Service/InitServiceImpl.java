@@ -1,4 +1,7 @@
-package ru.sfu;
+package ru.sfu.Service;
+
+import ru.sfu.Entity.DFAStates;
+import ru.sfu.Service.InitService;
 
 import java.util.List;
 

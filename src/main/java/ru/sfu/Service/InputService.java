@@ -1,9 +1,9 @@
-package ru.sfu;
+package ru.sfu.Service;
 
 import java.io.IOException;
 
 public class InputService {
-    String getUserString() {
+    public String getUserString() {
         String s = "";
         int inChar;
         try {
@@ -17,7 +17,7 @@ public class InputService {
         }
         return s;
     }
-    Boolean validateUserInput(String s, char[] alphabet) {
+     public Boolean validateUserInput(String s, char[] alphabet) {
         return s
                 .chars()
                 .allMatch(i -> i == alphabet[0] || i == alphabet[1]);

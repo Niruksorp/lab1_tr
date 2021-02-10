@@ -1,5 +1,11 @@
 package ru.sfu;
 
+import ru.sfu.Entity.DFAData;
+import ru.sfu.Entity.DFAStates;
+import ru.sfu.NFAFacade.DFAFacade;
+import ru.sfu.NFAFacade.DFAFacadeImpl;
+import ru.sfu.Service.InputService;
+
 public class Application {
 
     public static void main(String[] args) {

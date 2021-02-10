@@ -1,4 +1,4 @@
-package ru.sfu;
+package ru.sfu.Entity;
 
 import lombok.Builder;
 import lombok.Getter;

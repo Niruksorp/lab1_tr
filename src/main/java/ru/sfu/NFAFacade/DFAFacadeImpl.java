@@ -1,4 +1,8 @@
-package ru.sfu;
+package ru.sfu.NFAFacade;
+
+import ru.sfu.Entity.DFAData;
+import ru.sfu.Service.InitService;
+import ru.sfu.Service.InitServiceImpl;
 
 public class DFAFacadeImpl implements DFAFacade {
 
