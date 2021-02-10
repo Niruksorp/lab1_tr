@@ -15,9 +15,9 @@ public class InputService {
         }
         return s;
     }
-    Boolean validateUserInput(String s) {
+    Boolean validateUserInput(String s, char[] alphabet) {
         return s
                 .chars()
-                .allMatch(i -> i == '1' || i == '0');
+                .allMatch(i -> i == alphabet[0] || i == alphabet[1]);
     }
 }

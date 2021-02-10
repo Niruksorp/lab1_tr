@@ -6,7 +6,7 @@ public class Application {
         InputService inputService = new InputService();
         String s = inputService.getUserString();
         char[] chars = s.toCharArray();
-        if(inputService.validateUserInput(s)) {
+        if (inputService.validateUserInput(s,dfaData.getAlphabet())) {
             DFAStates[][] dfaTable = dfaData.getTransitionTable();
             for (int i = 0; i < s.length(); i++) {
                 DFAStates rez = dfaTable[dfaData.getStartStateInit().getState()][chars[i] - '0'];

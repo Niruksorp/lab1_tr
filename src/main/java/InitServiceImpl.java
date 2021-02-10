@@ -31,8 +31,8 @@ public class InitServiceImpl implements InitService {
     }
 
     @Override
-    public String[] alphabetInit() {
-        return new String[]{"1", "0"};
+    public char[] alphabetInit() {
+        return new char[]{'1', '0'};
     }
 
     @Override
